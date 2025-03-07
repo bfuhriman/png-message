@@ -23,7 +23,7 @@ Running the command below will attempt to decode a message from `encoded.png`.
 
 `bin/decode encoded.png`
 
-By default, this will print the message to the terminal. You can use the `-f` flag to direct the output to a text file instead.
+By default, this will print the message to the terminal. You can use `-f` to direct the output to a text file instead.
 
 `bin/decode encoded.png -f decoded.txt`
 
