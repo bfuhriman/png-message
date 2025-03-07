@@ -13,7 +13,7 @@ int findErrors(int *codeword, int len) {
         return 0;
     } else if (err && getOverallParity(codeword, len)) {
         return -1;
-	}
+    }
     return err;
 }
 
@@ -39,11 +39,11 @@ int getOverallParity(int *codeword, int len) {
 
 /* Calculates the minimum amount of redundancy required to encode d bits of data. */
 int minRedundancy(int d) {
-	int p = 0;
-	while ((1 << p) < (d + p + 1)) {
-		p++;
-	}
-	return p + 1;
+    int p = 0;
+    while ((1 << p) < (d + p + 1)) {
+	p++;
+    }
+    return p + 1;
 }
 
 /* Calculates the maximum amount of data bits that can be stored in a codeword of length n. */
