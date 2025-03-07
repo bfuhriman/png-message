@@ -6,20 +6,20 @@
 
 /* Increments the pixel bit position n times. */
 Position increment(Image img, Position pos, int n) {
-	for (int i = 0; i < n; i++) {
-		if (pos.channel < 2) {
-			pos.channel++;
-		} else {
-			pos.channel = 0;
-			pos.column++;
+    for (int i = 0; i < n; i++) {
+    	if (pos.channel < 2) {
+    	    pos.channel++;
+	} else {
+	    pos.channel = 0;
+	    pos.column++;
 
-			if (pos.column >= img.width) {
-				pos.column = 0;
-				pos.row++;
-			}
-		}
+	    if (pos.column >= img.width) {
+		pos.column = 0;
+		pos.row++;
+	    }
 	}
-	return pos;
+    }
+    return pos;
 }
 
 /* Reads the text file and returns its contents as a string. */
