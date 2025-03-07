@@ -28,4 +28,4 @@ By default, this will print the message to the terminal. You can use `-f` to dir
 `bin/decode encoded.png -f decoded.txt`
 
 ## Disclaimer
-This program was developed and tested on Linux using version 11.2.0 of the GCC compiler. Other operating systems or compilers may not be supported.
+This program was developed and tested on Linux using version 11.2.0 of the GCC compiler. Other operating systems and compilers may not be supported.
