@@ -8,7 +8,7 @@ The most straightforward way to encode a message is by running the command below
 
 The encoder also accepts two flags, `-f` and `-n`. The `-f` flag takes input from a text file instead of the command line, which is useful for very long messages.
 
-`bin/encode input.png encoded.png -f message.txt`
+```bin/encode input.png encoded.png -f message.txt```
 
 The `-n` flag can be used to simulate noise during data transmission. When `-n` is included, 1 or 2 bits will be flipped at random before encoding.
 
