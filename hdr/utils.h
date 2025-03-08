@@ -7,8 +7,6 @@
 typedef struct {
     int width;
     int height;
-    int color_type;
-    int bit_depth;
     png_bytep *rows;
 } Image;
 
