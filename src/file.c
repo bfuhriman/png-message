@@ -39,8 +39,6 @@ Image read(char *filename) {
 
     img.width = png_get_image_width(png, info);
     img.height = png_get_image_height(png, info);
-    img.color_type = png_get_color_type(png, info);
-    img.bit_depth = png_get_bit_depth(png, info);
 
     png_set_strip_16(png);
     png_set_palette_to_rgb(png);
