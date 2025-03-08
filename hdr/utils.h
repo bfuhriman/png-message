@@ -3,7 +3,7 @@
 
 #include <png.h>
 
-/* Stores image dimensions and other important information. */
+/* Stores image dimensions and row pointers. */
 typedef struct {
     int width;
     int height;
