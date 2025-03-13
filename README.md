@@ -2,7 +2,7 @@
 png-message is a CLI application for encoding and decoding ASCII text in PNG images. It uses least significant bit steganography, meaning the text is stored in the least significant bits of each image pixel. By only targeting the least significant bits, we ensure that the image is not visually altered during the encoding process. This program uses Hamming codes for error correction, so any single-bit errors during data transmission will be corrected before outputting the message. Two-bit errors will be detected, but cannot be fixed.
 
 ## Encoding
-The most straightforward way to encode a message is by running the command below, where `image.png` is the input image, `encoded.png` is the encoded image file you want to create, and `[message]` is the message you want to encode in the `image.png`.
+The most straightforward way to encode a message is by running the command below, where `image.png` is the input image, `encoded.png` is the encoded image file you want to create, and `[message]` is the message you want to encode in `image.png`.
 
 ```
 bin/encode image.png encoded.png [message]
