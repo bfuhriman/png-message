@@ -40,4 +40,4 @@ bin/decode encoded.png -f decoded.txt
 ```
 
 ## Disclaimer
-This program was developed and tested on Linux using version 11.2.0 of the GCC compiler. Other operating systems and compilers may not be supported.
+This program was developed and tested on Linux using version 11.2.0 of the GCC compiler. Other operating systems and compilers may not be supported. The libpng library is necessary for compilation.
