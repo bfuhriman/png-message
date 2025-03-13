@@ -11,7 +11,7 @@ int findErrors(int *codeword, int len) {
 
     if (!err && getOverallParity(codeword,len)) {
         return 0;
-    } else if (err && getOverallParity(codeword, len)) {
+    } else if (err && !getOverallParity(codeword, len)) {
         return -1;
     }
     return err;

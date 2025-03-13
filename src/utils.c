@@ -74,5 +74,11 @@ void simulateNoise(int *data, int len) {
         int r = rand() % len + 1;
         printf("Flipping bit %d from %d to %d.\n", r, data[r], data[r] ? 0 : 1);
         data[r] = data[r] ? 0 : 1;
+
+        int newrand;
+        do {
+            newrand = rand() % len + 1;
+        } while (newrand == r);
+        r = newrand;
     }
 }
