@@ -36,8 +36,8 @@ bin/decode encoded.png
 By default, this will print the message to the terminal. You can use `-f` to direct the output to a text file.
 
 ```
-bin/decode encoded.png -f decoded.txt
+bin/decode encoded.png -f message.txt
 ```
 
 ## Disclaimer
-This program was developed and tested on Linux using version 11.2.0 of the GCC compiler. Other operating systems and compilers may not be supported. The libpng library is necessary for compilation.
+This program was developed and tested on Linux using version 11.2.0 of the GCC compiler. Other operating systems and compilers may not be supported. The `libpng` library is necessary for compilation.
